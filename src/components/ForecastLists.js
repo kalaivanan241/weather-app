@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import moment from "moment";
 import Forecast from "./Forecast";
 
 class ForecastLists extends Component {
@@ -93,7 +92,7 @@ class ForecastLists extends Component {
   render() {
     const { forecasts } = this.props;
 
-    const { id, location } = this.props.location;
+    const { location } = this.props.location;
     return (
       <div>
         {forecasts.length > 0 && (

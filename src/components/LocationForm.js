@@ -20,10 +20,9 @@ class LocationForm extends Component {
     const place = this.props.place.location;
     return (
       <React.Fragment>
-        <nav className="nav-bar">Weather Forecast</nav>
         <form onSubmit={this.onSubmit}>
           <div className="row location-form">
-            <div class="form-group">
+            <div className="form-group">
               <label htmlFor="location" className="location-label">
                 Location
               </label>

@@ -24,7 +24,6 @@ export const buildCustomArray = ({ list }) => {
   ];
   const mapped5DaysForecast = mappedForecast.reduce((mappedObj, forecast) => {
     if (!mappedObj[forecast.date]) {
-      const forecastObj = {};
       mappedObj[forecast.date] = {};
       mappedObj[forecast.date]["forecast3hours"] = [forecast];
       mappedObj[forecast.date]["day"] = `${forecast.date}, ${

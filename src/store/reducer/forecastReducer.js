@@ -1,22 +1,19 @@
+import { types } from "./../types";
 const initState = {
-  forecast :[],
-}
+  forecast: []
+};
 
-const forecastReducer = (state  = initState, action) => {
-
-  switch(action.type)
-  {
-    case "FETCH_FORECAST" :{
-      return {...state,forecast:action.forecasts}
+const forecastReducer = (state = initState, action) => {
+  switch (action.type) {
+    case types.FETCH_FORECAST: {
+      return { ...state, forecast: action.forecasts };
     }
-    case "RESET_FORECAST" :{
-      return {...state,forecast:[]}
+    case types.RESET_FORECAST: {
+      return { ...state, forecast: [] };
     }
-    
+    default:
+      return { ...state };
   }
-
-return {...state}
-
-}
+};
 
 export default forecastReducer;

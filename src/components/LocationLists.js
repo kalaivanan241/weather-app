@@ -50,7 +50,7 @@ function LocationLists(props) {
           <div>
             <button
               onClick={() => updateLocation(location)}
-              class="btn btn-primary btn-sm"
+              className="btn btn-primary btn-sm"
             >
               Get Forecast
             </button>
