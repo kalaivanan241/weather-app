@@ -15,7 +15,7 @@ function LocationLists(props) {
   };
   if (locations.length === 0 || id) return <React.Fragment />;
   return (
-    <ul className="list-group list-group-horizontal justify-content-around">
+    <ul className="list-group list-group-horizontal overflow-auto">
       {locations.map(location => (
         <li
           className="list-group-item forecast-list-item"
