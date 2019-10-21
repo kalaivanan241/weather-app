@@ -35,7 +35,7 @@ export default function Forecast(props) {
           {condition}
         </div>
         <div
-          className="forecast-detail forecast-temp"
+          className="forecast-detail forecast-temp temp-padding"
           data-test="forecast-detail-temp"
         >
           {temp_min} - {temp_max}

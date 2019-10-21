@@ -295,6 +295,10 @@ nav .nav-wrapper {
   overflow-x: auto;
 }
 
+.temp-padding {
+  padding-left: 30px;
+}
+
 @media (min-width: 576px) {
   .col-sm {
     -ms-flex-preferred-size: 0;

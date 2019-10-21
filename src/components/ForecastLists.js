@@ -28,7 +28,7 @@ class ForecastLists extends Component {
               <div className="forecast-detail forecast-condition ">
                 Condition
               </div>
-              <div className="forecast-detail forecast-temp">
+              <div className="forecast-detail forecast-temp temp-padding">
                 Temp range(&#x2103;)
               </div>
               <div className="forecast-detail forecast-wind">Wind (m/s)</div>
