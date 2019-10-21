@@ -16,7 +16,6 @@ class ForecastLists extends Component {
   render3daysDetails = () => {
     const { showFlag } = this.state;
     const { forecasts } = this.props;
-    console.log(this.state.showFlag, forecasts);
     const forecast = showFlag
       ? forecasts.find(forecast => forecast.day === showFlag)
       : forecasts[0];
